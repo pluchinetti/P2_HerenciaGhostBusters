@@ -681,23 +681,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\estudiante.fit\\.nuget\\packages\\": {},
+    "C:\\Users\\pluch\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\estudiante.fit\\Desktop\\VOGEL_Herencia\\src\\Library\\Library.csproj",
+      "projectUniqueName": "c:\\Users\\pluch\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Library\\Library.csproj",
       "projectName": "Library",
-      "projectPath": "C:\\Users\\estudiante.fit\\Desktop\\VOGEL_Herencia\\src\\Library\\Library.csproj",
-      "packagesPath": "C:\\Users\\estudiante.fit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\estudiante.fit\\Desktop\\VOGEL_Herencia\\src\\Library\\obj\\",
+      "projectPath": "c:\\Users\\pluch\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Library\\Library.csproj",
+      "packagesPath": "C:\\Users\\pluch\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\pluch\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Library\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\estudiante.fit\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\pluch\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"

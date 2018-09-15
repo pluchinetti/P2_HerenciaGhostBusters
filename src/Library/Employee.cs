@@ -1,19 +1,17 @@
 using System;
 
-namespace Herencia {
+namespace Herencia
+{
+    public class Employee : Person
+    {
+        private int Age {get;}
+        private string PerID {get;}
 
-    public class Employee : Person {
-
-        private String address;
-        private Int32 age;
-        private String perID;
-
-        public Employee (String name, String lastname, String mail, Int32 age, String perID) 
-        : base (name, lastname, mail) {
-            this.age = age;
-            this.perID = perID;
+        public Employee (string firstName, string lastName, string emailAddr, int age, string perID) 
+        : base (firstName, lastName, emailAddr) {
+            this.Age = age;
+            this.PerID = perID;
         }
 
     }
-
 }
