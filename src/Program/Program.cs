@@ -17,9 +17,9 @@ namespace Herencia
             Client camilo = new Client ("Camilo", "Peña", "camilo.pm.28@gmail.com", "Parque Miramar");
 
             EmailSender ems = new EmailSender(fromAddr, password);
-            EmployeeEmail emailToEmployee = new EmployeeEmail(guillermo, fromAddr, "Ola k ase");
+            EmployeeEmail emailToEmployee = new EmployeeEmail(guillermo, fromAddr, "GhostBusters - Licencias y marcas");
 
-            ems.SendEmail(fromAddr, "Pablo Prueba", emailToEmployee.To.EmailAddr, emailToEmployee.Subject, emailToEmployee.Body);
+            ems.SendEmail(fromAddr, "GhostBusters LLC", emailToEmployee.To.EmailAddr, emailToEmployee.Subject, emailToEmployee.Body);
 
         }
 
