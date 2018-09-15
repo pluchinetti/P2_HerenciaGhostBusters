@@ -703,11 +703,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\pluch\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Program\\Program.csproj",
+      "projectUniqueName": "C:\\Users\\pluch\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Program\\Program.csproj",
       "projectName": "Program",
-      "projectPath": "c:\\Users\\pluch\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Program\\Program.csproj",
+      "projectPath": "C:\\Users\\pluch\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Program\\Program.csproj",
       "packagesPath": "C:\\Users\\pluch\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\pluch\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Program\\obj\\",
+      "outputPath": "C:\\Users\\pluch\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Program\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -724,8 +724,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "c:\\Users\\pluch\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Library\\Library.csproj": {
-              "projectPath": "c:\\Users\\pluch\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Library\\Library.csproj"
+            "C:\\Users\\pluch\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Library\\Library.csproj": {
+              "projectPath": "C:\\Users\\pluch\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Library\\Library.csproj"
             }
           }
         }

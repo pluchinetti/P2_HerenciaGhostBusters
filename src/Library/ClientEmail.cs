@@ -10,7 +10,7 @@ namespace Herencia
         : base(client, from, subject)
         {
             this.Client = client;
-            this.Body = $"Estimado {this.Client.FirstName} {this.Client.LastName} ..."
+            this.Body = $"Estimado {this.Client.FirstName} {this.Client.LastName} ...";
         }
     }
 }

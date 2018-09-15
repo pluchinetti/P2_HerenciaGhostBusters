@@ -2,14 +2,14 @@ namespace Herencia
 {
     public class Email
     {
-        public string ToAddress {get;}
+        public Person To {get;}
         public string FromAddress {get;}
         public string Subject {get;}
         public string Body {get; set;}
 
-        public Email(string toAddress, string fromAddress, string subject)
+        public Email(Person to, string fromAddress, string subject)
         {
-            this.ToAddress = toAddress;
+            this.To = to;
             this.FromAddress = fromAddress;
             this.Subject = subject;
         }

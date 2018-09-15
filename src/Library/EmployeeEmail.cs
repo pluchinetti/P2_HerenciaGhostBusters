@@ -9,8 +9,8 @@ namespace Herencia
         public EmployeeEmail(Employee employee, string from, string subject)
         : base (employee, from, subject)
         {
-            this.Employee = employee
-            this.Body = $"Estimado {this.Employee.FirstName} {this.Employee.LastName} ..."
+            this.Employee = employee;
+            this.Body = $"Estimado {this.Employee.FirstName} {this.Employee.LastName} ...";
         }
     }
 }

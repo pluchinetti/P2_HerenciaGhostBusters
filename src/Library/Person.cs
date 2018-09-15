@@ -4,9 +4,9 @@ namespace Herencia
 {
     public class Person
     {
-        private string FirstName {get;}
-        private string LastName {get;}
-        private string EmailAddr {get;}
+        public string FirstName {get;}
+        public string LastName {get;}
+        public string EmailAddr {get;}
 
         public Person (string firstName, string lastName, string email)
         {
