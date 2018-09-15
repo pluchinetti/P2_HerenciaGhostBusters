@@ -1,20 +1,18 @@
 using System;
 
-namespace Herencia {
+namespace Herencia
+{
+    public class Person
+    {
+        private string FirstName {get;}
+        private string LastName {get;}
+        private string EmailAddr {get;}
 
-    public abstract class Person {
-        private String name;
-
-        private String lastname;
-
-        private String mail;
-
-        public Person (String name, String lastname, String mail) {
-            this.name = name;
-            this.lastname = lastname;
-            this.mail = mail;
-
+        public Person (string firstName, string lastName, string email)
+        {
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this.EmailAddr = email;
         }
-
     }
 }
