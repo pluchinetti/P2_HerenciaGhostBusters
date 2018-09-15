@@ -697,23 +697,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pablo\\.nuget\\packages\\": {},
+    "C:\\Users\\pluch\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Program\\Program.csproj",
+      "projectUniqueName": "C:\\Users\\pluch\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Program\\Program.csproj",
       "projectName": "Program",
-      "projectPath": "d:\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Program\\Program.csproj",
-      "packagesPath": "C:\\Users\\Pablo\\.nuget\\packages\\",
-      "outputPath": "d:\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Program\\obj\\",
+      "projectPath": "C:\\Users\\pluch\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Program\\Program.csproj",
+      "packagesPath": "C:\\Users\\pluch\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pluch\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Program\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Pablo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\pluch\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -724,8 +724,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "d:\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Library\\Library.csproj": {
-              "projectPath": "d:\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Library\\Library.csproj"
+            "C:\\Users\\pluch\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Library\\Library.csproj": {
+              "projectPath": "C:\\Users\\pluch\\OneDrive\\Documents\\UCU\\2018\\Programación 2\\Repositories\\P2_HerenciaGhostBusters\\src\\Library\\Library.csproj"
             }
           }
         }
