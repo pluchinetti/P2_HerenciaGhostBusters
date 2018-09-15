@@ -4,7 +4,8 @@ namespace Herencia
 {
     class Program {
 
-        // private static Library disks = new Library ();
+
+
         static void Main (string[] args)
         {
             string fromAddr = "<<Ingresar nombre de usuario>>@gmail.com";
@@ -22,6 +23,9 @@ namespace Herencia
             ems.SendEmail(fromAddr, "GhostBusters LLC", emailToEmployee.To.EmailAddr, emailToEmployee.Subject, emailToEmployee.Body);
 
         }
+
+        
+
 
         /*private static void InitializeCDs () {
             disks.AddCD (
