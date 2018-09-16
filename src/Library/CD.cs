@@ -4,13 +4,21 @@ namespace Herencia {
 
     public class CD
     {
-        private string Name {get;}
+        public string Name {get;}
 
         public string Genre {get;}
-        private int Year {get;}
-        private string Artist {get;}
-        private string[] Songs {get;}
+        public int Year {get;}
+        public string Artist {get;}
+        public string[] Songs {get;}
 
+        /// <summary>
+        /// Método para crear un objeto de tipo CD.
+        /// </summary>
+        /// <param name="name">Título del disco.</param>
+        /// <param name="genre">Género del disco</param>
+        /// <param name="year">Año de publicación.</param>
+        /// <param name="artist">Artista del disco.</param>
+        /// <param name="songs">Listado con los títulos de las canciones.</param>
         public CD(string name, string genre, int year, string artist, string[] songs)
         {
             this.Name = name;

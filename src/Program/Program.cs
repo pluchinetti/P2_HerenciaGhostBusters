@@ -1,24 +1,29 @@
 ﻿using System;
+using System.Collections;
 
 namespace Herencia
 {
-    class Program {
-
-
-
+    class Program
+    {
         static void Main (string[] args)
-        {
-            Console.WriteLine("¿Desea probar la funcionalidad de envío de emails (Y/N)?");
-            if (Console.ReadLine() == "Y")
-            {
-                Employee guillermo = new Employee ("Guillermo", "Vogel", "guillevogel11@gmail.com", 18, "50968735");
-                Employee pablo = new Employee ("Pablo", "Luchinetti", "pluchinetti@live.com", 25, "47405029");
+        {   
+            // ===================== Inicialización e impresión de los datos del sistema =====================
+            // --------------------------- Inicialización de los datos del sistema ---------------------------
+            Clients clients = InitializeSystem.Clients();
+            Employees employees = InitializeSystem.Employees();
+            Catalogue catalogue = InitializeSystem.Catalogue();
 
-                Client julio = new Client ("Julio", "Suaya", "jcsl19@hotmail.com", "Carrasco");
-                Client camila = new Client ("Camila", "González", "camigonpal2@gmail.com", "Barra de Carrasco");
-                Client camilo = new Client ("Camilo", "Peña", "camilo.pm.28@gmail.com", "Parque Miramar");
-                // ====================== Credenciales para el envío de email ======================
-                
+            // ------------------------ Impresión en consola de los datos almacenados ------------------------
+            SystemPrinters.ClientPrinter(clients);      // Imprime los datos de los clientes registrados.
+            SystemPrinters.EmployeePrinter(employees);  // Imprime los datos de los empleados registrados.
+            SystemPrinters.CataloguePrinter(catalogue); // Imprime los datos de los discos registrados.
+            // ===============================================================================================
+
+            // ======================================= Envío de email ========================================
+            Console.WriteLine("¿Desea probar la funcionalidad de envío de emails (Y/N)?");
+            if (Console.ReadLine().ToLower() == "y")
+            {               
+                // ---------------------- Credenciales para el envío de email ----------------------
                 // Versión 1 - Credenciales en el código (hard-coded)
                 /*
                 string fromAddr = "<<Ingresar nombre de usuario>>@gmail.com";
@@ -30,61 +35,36 @@ namespace Herencia
                 string fromAddr = Console.ReadLine();
                 Console.WriteLine("Ingrese la contraseña del remitente: ");
                 string password = Console.ReadLine();
-                // =================================================================================
-                Console.WriteLine("Ingrese el nombre de un cliente (ver clientes registrados):" );
-                string inputClient = Console.ReadLine().ToLower();
-                Console.WriteLine("Ingrese el nombre de un empleado (ver empleados registrados):" );
-                string inputEmployee = Console.ReadLine().ToLower();
-
-                switch(inputClient)
-                {
-                    case "julio":
-                        Client targetClient = julio;
-                        break;
-                    case "camila":
-                        Client targetClient = camila;
-                        break;
-                    case 
-
-                }
-
+             
+                // ------------------- Personas para el envío de email (ver nota) ------------------
+/*                 Client targetClient = new Client ("Julio", "Suaya", "jcsl19@hotmail.com", "Carrasco");
+                Employee targetEmployee = new Employee ("Guillermo", "Vogel", "guillevogel11@gmail.com", 18, "50968735"); */
+                Client targetClient = new Client ("Julio", "Suaya", "pluchinetti@gmail.com", "Carrasco");
+                Employee targetEmployee = new Employee ("Pablo", "Luchinetti", "pluchinetti@live.com", 25, "47405029");
+                // Nota: Se declaron estas "nuevas" personas para el envío de email, ya que no se 
+                //       logró acceder a ellas desde las listas previamente creadas, utilizando 
+                //       un índice. Se agradece cualquier comentario acerca de cómo mejorar esto. :)
+                            
+                // ----------------------- Objetos de email y envío de estos -----------------------
+                EmailSender ems = new EmailSender(fromAddr, password);  // Genera el objeto que permitira el envío de email
+                                                                        // con las credenciales provistas.
                 
+                // Se crean los objetos emails con base en las plantillas previamente definidas.
+                ClientEmail emailToClient = new ClientEmail(targetClient, fromAddr, "GhostBusters - ¿Te has olvidado de nosotros?");
+                EmployeeEmail emailToEmployee = new EmployeeEmail(targetEmployee, fromAddr, "GhostBusters - ¡Excelentes noticias!");
+                
+                // Envío de los emails previamente definidos.
+                ems.SendEmail(emailToClient.FromAddress, "GhostBusters LLC - Atención al Cliente", emailToClient.To.EmailAddr, emailToClient.Subject, emailToClient.Body);
+                ems.SendEmail(emailToEmployee.FromAddress, "GhostBusters - Capital Humano", emailToEmployee.To.EmailAddr, emailToEmployee.Subject, emailToEmployee.Body);
+                
+                // Se informa al usuario que se enviaron correctamente (en teoría) los emails.
+                Console.WriteLine("===================================================================================================");
+                Console.WriteLine("Los emails se deberían haber enviado correctamente a los primeros empleado y cliente registrados.");
             }
-
-
-/*             EmailSender ems = new EmailSender(fromAddr, password);
-            EmployeeEmail emailToEmployee = new EmployeeEmail(guillermo, fromAddr, "GhostBusters - Licencias y marcas");
-
-            ems.SendEmail(fromAddr, "GhostBusters LLC", emailToEmployee.To.EmailAddr, emailToEmployee.Subject, emailToEmployee.Body); */
-
-            Clients clients = new Clients();
-
-            clients.AddClient(julio);
-            clients.AddClient(camila);
-            clients.AddClient(camilo);
-
-            SystemPrinters.ClientPrinter(clients);  // Imprime los datos de los clientes registrados.
-
-            Employees employees = new Employees();
-
-            employees.AddEmployee(guillermo);
-            employees.AddEmployee(pablo);
-
-            SystemPrinters.EmployeePrinter(employees);  // Imprime los datos de los empleados registrados.
-
-
-
+            else
+                Console.WriteLine("That's all folks!");
+            // ===============================================================================================
         }
-
-      
-
-
-        /*private static void InitializeCDs () {
-            disks.AddCD (
-                    new CD ("Powerslave", "Heavy metal", 1984, "Iron Maiden", new String[] { "Aces High", "2 minutes to Midnight", "Losfer Words" })); 
-            }
-        }
-        */
     }
 }
     

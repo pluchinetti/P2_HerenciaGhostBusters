@@ -4,7 +4,10 @@ namespace Herencia
 {
     public class SystemPrinters
     {
-
+        /// <summary>
+        /// Imprime en consola los datos de los clientes registrados, en forma ordenada.
+        /// </summary>
+        /// <param name="clients">Lista con objetos Cliente.</param>
         public static void ClientPrinter(Clients clients)
         {
             Console.WriteLine("======================== Clientes registrados =========================");
@@ -18,6 +21,10 @@ namespace Herencia
             }
         }
 
+        /// <summary>
+        /// Imprime en consola los datos de los empleados registrados, en forma ordenada. 
+        /// </summary>
+        /// <param name="employees">Lista con objetos Employee.</param>
         public static void EmployeePrinter(Employees employees)
         {
             Console.WriteLine("======================== Empleados registrados ========================");
@@ -30,6 +37,26 @@ namespace Herencia
                 Console.WriteLine($"Nº de C. I.: {employee.PerID}");
                 Console.WriteLine("-----------------------------------------------------------------------");
             }
-        } 
+        }
+
+        /// <summary>
+        /// Imprime en consola los datos de los discos registrados, en forma ordenada.
+        /// </summary>
+        /// <param name="catalogue">Catalogo con los discos disponibles.</param>
+        public static void CataloguePrinter(Catalogue catalogue)
+        {
+            Console.WriteLine("========================= Discos registrados ==========================");
+
+            foreach(CD cd in catalogue)
+            {   
+                Console.WriteLine("-----------------------------------------------------------------------");
+                Console.WriteLine($"Artista: {cd.Artist} | Título: {cd.Name}");
+                Console.WriteLine($"Género: {cd.Genre} | Año de publicación: {cd.Year}");
+                Console.WriteLine("Canciones:");
+                foreach(string song in cd.Songs)
+                    Console.WriteLine("- "+song);
+                Console.WriteLine("-----------------------------------------------------------------------");
+            }
+        }
     }
 }
