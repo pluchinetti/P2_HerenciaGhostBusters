@@ -37,10 +37,8 @@ namespace Herencia
                 string password = Console.ReadLine();
              
                 // ------------------- Personas para el envío de email (ver nota) ------------------
-/*                 Client targetClient = new Client ("Julio", "Suaya", "jcsl19@hotmail.com", "Carrasco");
-                Employee targetEmployee = new Employee ("Guillermo", "Vogel", "guillevogel11@gmail.com", 18, "50968735"); */
-                Client targetClient = new Client ("Julio", "Suaya", "pluchinetti@gmail.com", "Carrasco");
-                Employee targetEmployee = new Employee ("Pablo", "Luchinetti", "pluchinetti@live.com", 25, "47405029");
+                Client targetClient = new Client ("Julio", "Suaya", "jcsl19@hotmail.com", "Carrasco");
+                Employee targetEmployee = new Employee ("Guillermo", "Vogel", "guillevogel11@gmail.com", 18, "50968735");
                 // Nota: Se declaron estas "nuevas" personas para el envío de email, ya que no se 
                 //       logró acceder a ellas desde las listas previamente creadas, utilizando 
                 //       un índice. Se agradece cualquier comentario acerca de cómo mejorar esto. :)
